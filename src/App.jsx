@@ -6,6 +6,7 @@ import Contatos from './Components/Pages/Contatos/Contatos.jsx'
 import Empresa from './Components/Pages/Empresa/Empresa.jsx'
 import Container from './Components/Layout/Container/Container.jsx'
 import Footer from './Components/Layout/Footer/Footer.jsx'
+import CriarProjeto from './Components/Pages/CriarProjeto/CriarProjeto.jsx'
   
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/projetos" element={<Projetos/>}/>
           <Route exact path="/empresa" element={<Empresa/>}/>
           <Route exact path="/contatos" element={<Contatos/>}/>
+          <Route exact path="/criarProjeto" element={<CriarProjeto/>}/>
         </Routes>
       </Container>
       <Footer/>

@@ -13,6 +13,7 @@ function Navbar(){
                <li className='item'><Link to="/projetos">Projetos</Link></li>
                <li className='item'><Link to="/empresa">Empresa</Link></li>
                <li className='item'><Link to="/contatos">Contatos</Link></li>
+               <li className='item'><Link to="/criarProjeto">Criar Projeto</Link></li>
             </ul>
          </Container>
       </nav>
