@@ -13,5 +13,9 @@
    padding: 0.7em;
    border-radius: 0;
    border: none;
-   color: #7b7b7b;
+   color: black;
+}
+
+option {
+   color: black;
 }

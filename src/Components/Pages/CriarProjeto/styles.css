@@ -11,3 +11,8 @@
 .criar-container p {
    color: #7b7b7b;
 }
+
+.form {
+   width: 100%;
+   margin: 2em 0;
+}
