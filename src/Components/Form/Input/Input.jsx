@@ -1,16 +1,14 @@
 import './styles.css'
 
-function Input({type, text, name, placeholder, handleOnChange, value}){
+function Input({type, text, name, placeholder, onChange}){
    return (
       <div className='form-control'>
          <label htmlFor={name}>{text}:</label>
          <input 
             type={type} 
             name={name} 
-            id={name} 
             placeholder={placeholder}
-            onChange={handleOnChange}
-            value={value}
+            onChange={onChange}
          />
       </div>
    )

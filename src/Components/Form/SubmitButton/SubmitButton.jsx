@@ -1,9 +1,10 @@
 import './styles.css'
+import {Link} from 'react-router-dom'
 
-function SubmitButton({text}){
+function SubmitButton({text, adicionarProjeto, to}){
    return (
       <div>
-         <button className='button'>{text}</button>
+         <Link to={to} onClick={() => adicionarProjeto()} className='button'>{text}</Link>
       </div>
    )
 }

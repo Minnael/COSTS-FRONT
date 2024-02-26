@@ -1,0 +1,57 @@
+.card-container {
+   width: 260px;
+   height: 260px;
+   padding: 0.5em;
+   background-color: white;
+   border: 2px solid #7a7a7a;
+   border-radius: 5px;
+   margin-right: 17px;
+   margin-bottom: 17px;
+}
+
+.titulo-projeto {
+   display: flex;
+   width: 240px;
+   height: 100px;
+   margin-top: 3px;
+   margin-bottom: 25px;
+   background-color: #333;
+   font-size: 12px;
+   border-radius: 7px;
+   color: #ffbb33;
+}  
+
+.titulo-projeto h1 {
+   margin-left: 10px;
+   text-transform: uppercase;
+}
+
+.card-container span {
+   display: flex;
+   flex-wrap: wrap;
+   font-weight: bold;
+}
+
+.card-container p {
+   font-weight: bold;
+}
+
+.icones {
+   display: flex;
+   justify-content: left;
+   margin-top: 40px;
+}
+
+.editar {
+   width: 24px; 
+   height: 24px; 
+   object-fit: cover;
+}
+
+.lixeira {
+   width: 19px; 
+   height: 19px; 
+   object-fit: cover;
+   margin-top: 3px;
+}
+

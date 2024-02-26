@@ -1,0 +1,21 @@
+.projeto-container {
+   padding: 2em;
+}  
+
+.titulo-container {
+   display: flex;
+   width: 1250px;
+   justify-content: space-between;
+   margin-bottom: 2em;
+}
+
+.projetos {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-left: 50px;
+}
+
+
+
+

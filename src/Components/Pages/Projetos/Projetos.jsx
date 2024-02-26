@@ -1,7 +1,47 @@
+import './styles.css'
+import axios from 'axios'
+import Card from './Card/Card.jsx';
+import {useEffect, useState} from 'react'
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import LinkButton from '../../Layout/LinkButton/LinkButton.jsx'
+
 function Projetos(){
+   const [projetos, setProjetos] = useState([])
+
+   useEffect(() => {
+      carregarProjetos();
+   }, []);
+
+   const carregarProjetos = () => {
+      axios.get('http://localhost:8800/projetos')
+      .then(response => setProjetos(response.data))
+      .catch(error => console.error(error));
+   };
+
    return (
-      <div>
-         <h1>PAGINA DE PROJETOS</h1>
+      <div className='projeto-container'>
+         <ToastContainer position="bottom-right" theme="colored"/>
+         <div className='titulo-container'>
+            <h1>Pagina de Projetos</h1>
+            <LinkButton to="/criarProjeto" text="Criar projeto" />
+         </div>
+            <div className='projetos'>
+               {projetos.length > 0 ? (
+                  <>
+                     {projetos.map((item) => (
+                        <Card 
+                           nome={item.nome} 
+                           orcamento={item.orcamento} 
+                           categoria={item.categoria} 
+                           id={item._id}
+                        />
+                     ))}
+                  </>
+               ) : (
+                  <p>Aguarde, estamos carregando os projetos...</p>
+               )}   
+            </div>
       </div>
    )
 }
