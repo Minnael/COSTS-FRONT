@@ -9,16 +9,6 @@ import LinkButton from '../../Layout/LinkButton/LinkButton.jsx'
 function Projetos(){
    const [projetos, setProjetos] = useState([])
 
-   useEffect(() => {
-      carregarProjetos();
-   }, []);
-
-   const carregarProjetos = () => {
-      axios.get('http://localhost:8800/projetos')
-      .then(response => setProjetos(response.data))
-      .catch(error => console.error(error));
-   };
-
    return (
       <div className='projeto-container'>
          <ToastContainer position="bottom-right" theme="colored"/>
