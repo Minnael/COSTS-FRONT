@@ -5,7 +5,7 @@ import {FaTrash, FaEdit} from "react-icons/fa"
 function Card({nome, orcamento, categoria, id}){
 
    const apagarProjeto = (id) => {
-      axios.delete(`http://localhost:8800/projetos/${id}`)
+      axios.delete(`https://costs-back.vercel.app/projetos/${id}`)
         .then(response => {
             console.log('Registro excluído com sucesso:', response.data);
         })
