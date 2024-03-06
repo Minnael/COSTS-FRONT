@@ -17,13 +17,13 @@ function CriarProjeto(){
    }, []);
 
    const carregarCategorias = () => {
-      axios.get('http://localhost:8800/categorias')
+      axios.get('https://costs-back.vercel.app/categorias/')
       .then(response => setCategorias(response.data))
       .catch(error => console.error(error));
    };
 
    const adicionarProjeto = () => {
-      axios.post('http://localhost:8800/projetos', novoProjeto)
+      axios.post('https://costs-back.vercel.app/projetos/', novoProjeto)
         .then(response => {
           console.log('Dado adicionado com sucesso:', response.data);
           toast.success('Projeto criado com sucesso!');

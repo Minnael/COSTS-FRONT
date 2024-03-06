@@ -14,7 +14,7 @@ function Projetos(){
    }, []);
 
    const carregarProjetos = () => {
-      axios.get('http://localhost:8800/projetos')
+      axios.get('https://costs-back.vercel.app/projetos/')
       .then(response => setProjetos(response.data))
       .catch(error => console.error(error));
    };
