@@ -23,7 +23,7 @@ function Projetos(){
       <div className='projeto-container'>
          <ToastContainer position="bottom-right" theme="colored"/>
          <div className='titulo-container'>
-            <h1>Pagina de Projetos</h1>
+            <h1>Página de Projetos</h1>
             <LinkButton to="/criarProjeto" text="Criar projeto" />
          </div>
             <div className='projetos'>

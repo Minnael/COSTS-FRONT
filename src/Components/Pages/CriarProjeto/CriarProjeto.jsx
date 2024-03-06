@@ -11,7 +11,7 @@ import SubmitButton from '../../Form/SubmitButton/SubmitButton.jsx'
 function CriarProjeto(){
    const [categories, setCategorias] = useState([]);
    const [novoProjeto, setNovoProjeto] = useState({nome: '', orcamento: '', categoria: ''})
-
+   
    useEffect(() => {
       carregarCategorias();
    }, []);
@@ -29,7 +29,8 @@ function CriarProjeto(){
           toast.success('Projeto criado com sucesso!');
         })
         .catch(error => console.error('Erro ao adicionar dado:', error));
-    };
+   };
+
 
    return(
       <div className='criar-container'>
@@ -38,10 +39,10 @@ function CriarProjeto(){
          <form className='form'>
             <ToastContainer position="bottom-right" theme="colored"/>
                <Input type='text' text='NOME DO PROJETO' name='name' placeholder='INSIRA O NOME DO PROJETO'
-                  onChange={(e) => setNovoProjeto({...novoProjeto, nome: e.target.value})}/>    
+                  onChange={(e) => setNovoProjeto({...novoProjeto, nome: e.target.value})} maxLength={45}/>    
 
                <Input type='number' text='ORÇAMENTO DO PROJETO' name='budget' placeholder='INSIRA O ORÇAMENTO TOTAL'
-                  onChange={(e) => setNovoProjeto({...novoProjeto, orcamento: e.target.value})} />
+                  onChange={(e) => setNovoProjeto({...novoProjeto, orcamento: e.target.value})} min={0} max={1000}/>
 
                <Select name='category-id' text='SELECIONE A CATEGORIA' options={categories}
                   onChange={(e) => setNovoProjeto({...novoProjeto, categoria: e.target.value})}/>

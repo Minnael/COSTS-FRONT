@@ -1,0 +1,36 @@
+.bolinha-vermelha {
+   display: inline-block;
+   width: 11px;
+   height: 11px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: tomato; /* Cor para a categoria 1 */
+}
+ 
+.bolinha-verde {
+   display: inline-block;
+   width: 11px;
+   height: 11px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: green; /* Cor para a categoria 2 */
+}
+ 
+.bolinha-azul {
+   display: inline-block;
+   width: 11px;
+   height: 11px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: #0000ff; /* Cor para a categoria 3 */
+}
+
+.bolinha-amarelo {
+   display: inline-block;
+   width: 11px;
+   height: 11px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: yellow; /* Cor para a categoria 3 */
+}
+ 
