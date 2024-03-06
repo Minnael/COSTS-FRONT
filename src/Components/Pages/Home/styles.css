@@ -8,7 +8,7 @@
 }
 
 .home-container h1 {
-   font-size: 2.5em;
+   font-size: 2.6em;
    margin-bottom: .5em;
 }
 
@@ -19,7 +19,9 @@
 }
 
 .home-container p {
-   margin-bottom: 1.5em;
+   font-size: 14.5px;
+   margin-top: 1em;
+   margin-bottom: 2em;
    color: #7b7b7b
 }
 

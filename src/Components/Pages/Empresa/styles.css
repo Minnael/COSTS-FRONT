@@ -1,0 +1,48 @@
+.container-empresa {
+   width: 100%;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   flex-direction: column;
+}  
+
+
+.container-descricao {
+   margin-right: 10px;
+   margin-left: 25px;
+   margin-top: 20px;
+   margin-bottom: 40px;
+   
+   border: 4px solid black; 
+   padding: 15px; 
+   border-radius: 10px;
+   
+   text-align: justify;
+   align-items: center;
+   line-height: 1.5em;
+   flex-direction: column;
+}
+
+.container-empresa h1 {
+   width: 310px;
+
+   font-size: 2em;
+   text-align: center;
+   margin-bottom: 20px;
+   
+   color: #ffbb33;
+   padding: 8px;
+   background-color: #222;
+} 
+
+.container-descricao p {
+   font-size: 16px;
+   margin-bottom: 15px;
+   color: #7b7b7b;
+}
+
+.container-descricao b {
+   font-size: 15px;
+}
+
+
